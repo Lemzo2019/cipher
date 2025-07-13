@@ -1,0 +1,1 @@
+status_hour = current_hour
