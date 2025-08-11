@@ -1,0 +1,1 @@
+Obj_time_info_hour.status_hour += 1

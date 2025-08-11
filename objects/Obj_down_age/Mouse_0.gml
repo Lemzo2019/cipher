@@ -1,0 +1,1 @@
+Obj_time_info_age.new_zn += -1

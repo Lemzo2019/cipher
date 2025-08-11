@@ -1,3 +1,22 @@
+
+Obj_str.room_now = 4
+
+// Создание новых объектов
+var w = 64		// Отступ слева
+var h = 928		// Отступ сверху
+var w_b = 224	// Отступ между объектами по x
+var h_b = 128	// Отступ между объектами по y (Это для рядов)
+
+instance_create_depth(w, h, -1, Obj_up_age)
+instance_create_depth(w + w_b, h, -1, Obj_up_hour)
+instance_create_depth(w + w_b*2, h, -1, Obj_up_min)
+instance_create_depth(w, h + h_b, -1, Obj_time_info_age)
+instance_create_depth(w + w_b, h + h_b, -1, Obj_time_info_hour)
+instance_create_depth(w + w_b*2, h + h_b, -1, Obj_time_info_min)
+instance_create_depth(w, h + h_b*2, -1, Obj_down_age)
+instance_create_depth(w + w_b, h + h_b*2, -1, Obj_down_hour)
+instance_create_depth(w + w_b*2, h + h_b*2, -1, Obj_down_min)
+
 /// shifr(text, shift1, shift2)
 function shifr(text, shift1, shift2) {
     var base64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";

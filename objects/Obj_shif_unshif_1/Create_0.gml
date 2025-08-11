@@ -1,3 +1,11 @@
+
+Obj_str.room_now = 3
+
+Obj_str.y = 512
+instance_create_depth(194, 384, 0, Obj_time_now)
+instance_create_depth(64, 480, -1, Obj_strel_down)
+instance_create_depth(672, 384, -1, Obj_strel_up)
+
 /// caesar_cipher(text, shift)
 /// @arg text - исходный текст (string)
 /// @arg shift - сдвиг (integer)

@@ -10,8 +10,8 @@
   "name":"Obj_str",
   "overriddenProperties":[],
   "parent":{
-    "name":"Мой шифр",
-    "path":"folders/Объекты/Мой шифр.yy",
+    "name":"UI",
+    "path":"folders/Объекты/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

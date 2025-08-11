@@ -1,39 +1,77 @@
 text_input = ""
 txt = ""
 text_text = ""
+text_paste = ""
+room_now = 0
 
+temp_text = ""
+stage_1 = 0
+text = 0
+text_tik = 0
+stage = 1
+lines_count = 0
+ch = 0
+hag_1 = 0
+hag_2 = 0
 
-// Страшно большая функция для переноса строк
-function string_count_ext(_txt, _w) {
-    var _lines = 1;
-    var _line = "";
-    var _words = string_split(_txt, " ");
-    for (var i = 0; i < array_length(_words); i++) {
-        var _word = _words[i];
-        // Обработка явного переноса строки
-        if (string_pos("#", _word) > 0) {
-            var _parts = string_split(_word, "#");
-            for (var j = 0; j < array_length(_parts); j++) {
-                if (_line != "") _line += " ";
-                _line += _parts[j];
-                if (string_width(_line) > _w) {
-                    _lines += 1;
-                    _line = _parts[j];
+// Ещё одна страшная функция
+/// text_wrap_lines(_txt, _w) -> array of lines
+function text_wrap_lines(_txt, _w) {
+    var lines = [];
+    if (is_undefined(_txt)) _txt = "";
+    if (_txt == "") { lines[0] = ""; return lines; }
+
+    // Разбиваем по # (ручной перенос)
+    var paras = string_split(_txt, "#");
+
+    for (var p = 0; p < array_length(paras); p++) {
+        var para = paras[p];
+        var words = string_split(para, " ");
+        var line = "";
+
+        for (var i = 0; i < array_length(words); i++) {
+            var word = words[i];
+            if (word == "") continue;
+
+            var test = (line == "") ? word : (line + " " + word);
+
+            if (string_width(test) > _w) {
+                // зафиксировать текущую строку
+                if (line != "") {
+                    lines[array_length(lines)] = line;
+                    line = "";
                 }
-                if (j < array_length(_parts) - 1) {
-                    _lines += 1;
-                    _line = "";
+
+                // слово само по себе шире _w — рубим по символам
+                if (string_width(word) > _w) {
+                    var chunk = "";
+                    for (var k = 1; k <= string_length(word); k++) {
+                        var ch = string_char_at(word, k);
+                        var tryc = chunk + ch;
+                        if (string_width(tryc) > _w) {
+                            lines[array_length(lines)] = chunk;
+                            chunk = ch;
+                        } else {
+                            chunk = tryc;
+                        }
+                    }
+                    line = chunk;
+                } else {
+                    line = word;
                 }
-            }
-        } else {
-            var _test_line = _line == "" ? _word : _line + " " + _word;
-            if (string_width(_test_line) > _w) {
-                _lines += 1;
-                _line = _word;
             } else {
-                _line = _test_line;
+                line = test;
             }
         }
+
+        if (line != "") {
+            lines[array_length(lines)] = line;
+            line = "";
+        }
+
+        // Между параграфами просто начинаем новую строку (без пустой строки)
     }
-    return _lines;
+
+    if (array_length(lines) == 0) lines[0] = "";
+    return lines;
 }

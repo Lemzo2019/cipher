@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Ультро время",
-    "path":"folders/Объекты/Ультро время.yy",
+    "path":"folders/Объекты/Шифры/Ультро время.yy",
   },
   "parentObjectId":null,
   "persistent":false,
