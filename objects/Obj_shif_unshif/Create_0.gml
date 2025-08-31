@@ -1,3 +1,5 @@
+
+Obj_str.room_now = 2
 /// caesar_cipher(text, shift)
 /// @arg text - исходный текст (string)
 /// @arg shift - сдвиг (integer)

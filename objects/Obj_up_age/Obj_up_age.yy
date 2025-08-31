@@ -2,6 +2,7 @@
   "$GMObject":"",
   "%Name":"Obj_up_age",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -9,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Переключатели",
-    "path":"folders/Объекты/Ультро время/выбор времени/Переключатели.yy",
+    "path":"folders/Объекты/Шифры/Ультро время/выбор времени/Переключатели.yy",
   },
   "parentObjectId":null,
   "persistent":false,

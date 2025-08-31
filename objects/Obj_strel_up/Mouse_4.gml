@@ -1,10 +1,10 @@
 
-var pl = Obj_time_now.pl_tim
-Obj_time_now.tim = 1
+var pl = Obj_shif_unshif_1.hour
+Obj_shif_unshif_1.tim = 1
 
-if ((pl + 1) < 23) {
-	Obj_time_now.pl_tim += 1
+if ((pl + 1) < 24) {
+	Obj_shif_unshif_1.hour += 1
 }
 else {
-	Obj_time_now.pl_tim = 0
+	Obj_shif_unshif_1.hour = 0
 }

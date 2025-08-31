@@ -1,0 +1,1 @@
+Obj_str.text_input = ""

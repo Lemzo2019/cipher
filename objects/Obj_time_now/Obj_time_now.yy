@@ -3,6 +3,7 @@
   "%Name":"Obj_time_now",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -10,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Текущее время",
-    "path":"folders/Объекты/по часам/Текущее время.yy",
+    "path":"folders/Объекты/Шифры/по часам/Текущее время.yy",
   },
   "parentObjectId":null,
   "persistent":false,

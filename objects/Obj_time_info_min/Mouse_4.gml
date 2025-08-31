@@ -1,0 +1,1 @@
+status_min = current_minute

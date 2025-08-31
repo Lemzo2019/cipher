@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"по часам",
-    "path":"folders/Объекты/по часам.yy",
+    "path":"folders/Объекты/Шифры/по часам.yy",
   },
   "parentObjectId":null,
   "persistent":false,

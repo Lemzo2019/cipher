@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Мой шифр",
-    "path":"folders/Объекты/Мой шифр.yy",
+    "path":"folders/Объекты/Шифры/Мой шифр.yy",
   },
   "parentObjectId":null,
   "persistent":false,

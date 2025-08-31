@@ -1,4 +1,3 @@
-
 // Добавление проверки что бы не улетало за рамки дозволенного
 var g = keyboard_check(vk_shift)
 var g_g = keyboard_check(vk_control)

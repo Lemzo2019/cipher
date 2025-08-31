@@ -9,8 +9,8 @@
   "name":"Obj_lock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Объекты",
-    "path":"folders/Объекты.yy",
+    "name":"UI",
+    "path":"folders/Объекты/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

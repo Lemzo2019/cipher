@@ -1,1 +1,2 @@
-room_goto(Room5)
+global.room = 4
+room_goto(Room1)

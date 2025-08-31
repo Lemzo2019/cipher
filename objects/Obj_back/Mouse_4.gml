@@ -1,0 +1,1 @@
+Obj_txt_dop.st = 1

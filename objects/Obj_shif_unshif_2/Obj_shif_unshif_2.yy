@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Шифр цезаря",
-    "path":"folders/Объекты/Шифр цезаря.yy",
+    "path":"folders/Объекты/Шифры/Шифр цезаря.yy",
   },
   "parentObjectId":null,
   "persistent":false,

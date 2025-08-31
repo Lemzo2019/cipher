@@ -1,41 +1,47 @@
+draw_set_font(F_RU); // шрифт выставь ДО измерений
+
 // Параметры
-var max_width = 650;       // Максимальная ширина текста
-var padding = 10;          // Отступы внутри квадрата
-var line_spacing = 20;      // Межстрочный интервал (обычно 5-10 достаточно)
+var max_width = sprite_width;	// Ширина строки, сейчас равна спрайту
+var padding   = 10;				// Отступ между символами
+var sep       = 16;				// сделал больше, чтобы не слипалось
+var lin_con   = 4				// Количество строк 
 
-// Высота одной строки с учетом межстрочного интервала
-var line_height = string_height("M") ;
+// Расчёты
+var base_h = string_height("M");
+var lines  = (txt == "") ? [""] : text_wrap_lines(txt, max_width);
+var lines_count = array_length(lines);
+var lines_drawn = min(lines_count, 5);
 
-// Считаем количество строк, которые займёт текст с переносом
-var lines_count = 1;
-if (txt != "") {
-    lines_count = string_count_ext(txt, max_width);
-}
+var rect_width  = max_width + padding * 2;
+var rect_height = base_h * lines_drawn + sep * (lines_drawn - 1) + padding * 2;
 
-// Считаем количество строк, которые займёт текст с переносом
-if (lines_count > 4) lines_count = 4;
-
-// Размеры прямоугольника (учитываем отступы сверху и снизу)
-var rect_width = max_width + padding * 2;
-var rect_height = line_height * lines_count + padding * 2;
-
-// Координаты квадрата (центрируем по объекту)
-var rect_x1 = x - rect_width / 2;
+var rect_x1 = x;
 var rect_y1 = y;
-var rect_x2 = x + rect_width / 2;
-var rect_y2 = y + rect_height;
+var rect_x2 = rect_x1 + rect_width;
+var rect_y2 = rect_y1 + rect_height;
 
-// Рисуем фон - залитый прямоугольник
-draw_set_color(make_color_rgb(50, 50, 50));  // Темно-серый фон
+var result = Scr_obj_str()
+var col_b = result[0]
+var col_t = result[1]
+var col_txt = result[2]
+
+// Сам прямоугольник
+draw_set_color(col_b) //(make_color_rgb(50, 50, 50));
 draw_rectangle(rect_x1, rect_y1, rect_x2, rect_y2, false);
 
-// Рисуем обводку прямоугольника
-draw_set_color(c_white);
+// Обводка
+draw_set_color(col_t)  //(c_white);
 draw_rectangle(rect_x1, rect_y1, rect_x2, rect_y2, true);
 
-// Рисуем текст с переносом
-draw_set_color(c_white);
+// Текст
+draw_set_color(col_txt)  //(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-draw_text_ext(rect_x1 + padding, rect_y1 + padding, txt, line_spacing, max_width);
+var tx = rect_x1 + padding;
+var ty = rect_y1 + padding;
+var step = base_h + sep;
+
+for (var i = 0; i < lines_drawn; i++) {
+    draw_text(tx, ty + i * step, lines[i]);
+}
