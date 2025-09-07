@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_time_ultra",
+  "%Name":"Obj_cezar_ult",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_time_ultra",
+  "name":"Obj_cezar_ult",
   "overriddenProperties":[],
   "parent":{
     "name":"start",

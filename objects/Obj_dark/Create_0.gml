@@ -4,6 +4,7 @@ instance_deactivate_all(true)
 instance_activate_object(Obj_txt_dop)
 instance_activate_object(Obj_back)
 
+
 switch global.room {
 	case 3: // По часам
 		instance_activate_object(Obj_txt_dop)

@@ -140,3 +140,24 @@ else if (room_now == 4) { // Ультро время
 		}
 	}
 }
+else if (room_now == 5) { // Шифр Винджера
+	
+	var key = global.key
+	
+	if (lo == 0) {
+		if (st == 0) {
+			txt = text_input
+		}
+		else {
+			txt = Obj_shif_unshif_3.shifr(key, text_input)
+		}
+	}
+	else {
+		if (st == 0) {
+			txt = text_input
+		}
+		else {
+			txt = Obj_shif_unshif_3.deshifr(key, text_input)
+		}
+	}
+}

@@ -14,7 +14,10 @@ switch global.room {
 	case 4:
 		txt = "Шифр по времени"
 		break
+	case 5:
+		txt = "Шифр Виженера"
+		break
 	default:
-		txt = "Этого быть не болжно"
+		txt = "Этого быть не должно"
 		break
 }

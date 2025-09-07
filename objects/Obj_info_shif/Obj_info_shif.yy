@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_time_ultra",
+  "%Name":"Obj_info_shif",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_time_ultra",
+  "name":"Obj_info_shif",
   "overriddenProperties":[],
   "parent":{
-    "name":"start",
-    "path":"folders/Объекты/start.yy",
+    "name":"Объекты",
+    "path":"folders/Объекты.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_up_lv",
-    "path":"sprites/Sp_up_lv/Sp_up_lv.yy",
+    "name":"Sp_inf_shif",
+    "path":"sprites/Sp_inf_shif/Sp_inf_shif.yy",
   },
   "spriteMaskId":null,
   "visible":true,

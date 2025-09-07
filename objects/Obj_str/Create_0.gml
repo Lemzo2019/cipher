@@ -2,17 +2,19 @@ text_input = ""
 txt = ""
 text_text = ""
 text_paste = ""
-room_now = 0
+ch = 0
 
+room_now = 0
 temp_text = ""
 stage_1 = 0
 text = 0
 text_tik = 0
 stage = 1
 lines_count = 0
-ch = 0
 hag_1 = 0
 hag_2 = 0
+global.key = ""
+
 
 // Ещё одна страшная функция
 /// text_wrap_lines(_txt, _w) -> array of lines

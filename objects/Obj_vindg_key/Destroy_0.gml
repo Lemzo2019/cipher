@@ -1,0 +1,1 @@
+global.key = text_input
