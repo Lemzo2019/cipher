@@ -1,5 +1,5 @@
 
-Obj_str.room_now = 1
+Obj_str.room_now = 6
 
 /// caesar_cipher(text, shift)
 /// @arg text - исходный текст (string)

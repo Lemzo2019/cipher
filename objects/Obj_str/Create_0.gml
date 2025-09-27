@@ -3,9 +3,9 @@ txt = ""
 text_text = ""
 text_paste = ""
 ch = 0
+temp_text = ""
 
 room_now = 0
-temp_text = ""
 stage_1 = 0
 text = 0
 text_tik = 0

@@ -161,3 +161,23 @@ else if (room_now == 5) { // Шифр Винджера
 		}
 	}
 }
+else if (room_now == 6) { // XOR
+	var key = global.key
+	
+	if (lo == 0) {
+		if (st == 0) {
+			txt = text_input
+		}
+		else {
+			txt = Obj_shif_deshif_XOR.shif_XOR(key, text_input)
+		}
+	}
+	else {
+		if (st == 0) {
+			txt = text_input
+		}
+		else {
+			txt = Obj_shif_deshif_XOR.deshif_XOR(key, text_input)
+		}
+	}
+}

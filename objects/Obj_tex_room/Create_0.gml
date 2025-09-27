@@ -19,6 +19,11 @@ switch (global.room) {
 		instance_create_depth(224, 384, -1, Obj_txt_dop)
 		global.key = "Заглушка"
 		break
+	case 6: // XOR
+		instance_create_depth(0, 0, 0, Obj_shif_deshif_XOR)
+		instance_create_depth(224, 384, -1, Obj_txt_dop)
+		global.key = "XOR"
+		break
 }
 
 instance_destroy()

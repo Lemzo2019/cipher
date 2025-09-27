@@ -13,8 +13,8 @@
   "name":"Obj_vindg_key",
   "overriddenProperties":[],
   "parent":{
-    "name":"Шифр Винджера",
-    "path":"folders/Объекты/Шифры/Шифр Винджера.yy",
+    "name":"Доп настройки",
+    "path":"folders/Объекты/Шифры/Доп настройки.yy",
   },
   "parentObjectId":null,
   "persistent":false,

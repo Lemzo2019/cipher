@@ -1,4 +1,3 @@
-text_room = 0
 is_pressed = 0
 txt = ""
 switch global.room {
@@ -16,6 +15,9 @@ switch global.room {
 		break
 	case 5:
 		txt = "Шифр Виженера"
+		break
+	case 6:
+		txt = "Шифрация с помощью XOR"
 		break
 	default:
 		txt = "Этого быть не должно"
